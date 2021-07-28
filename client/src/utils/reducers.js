@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+// import { useReducer } from 'react';
 import {
   UPDATE_PRODUCTS,
   ADD_TO_CART,
@@ -10,6 +10,19 @@ import {
   CLEAR_CART,
   TOGGLE_CART,
 } from './actions';
+
+// Every reducer needs an initial state.
+const initialState = {
+  // chosen from arrays
+  products: [],
+  categories: [],
+  // a string
+  currentCategory: '',
+  cat: [],
+  // setting cart as closed to start
+  cartOpen: false,
+
+}
 
 // The reducer is a function that accepts the current state and an action. It returns a new state based on that action.
 export const reducer = (state, action) => {
@@ -86,13 +99,15 @@ export const reducer = (state, action) => {
         currentCategory: action.currentCategory,
       };
 
-    // Return the state as is in the event that the `action.type` passed to our reducer was not accounted for by the developers
+    // Return the state as is in the event that the `action.type` passed to our reducer was not accounted for by the developers.
     // This saves us from a crash.
     default:
       return state;
   }
 };
 
-export function useProductReducer(initialState) {
-  return useReducer(reducer, initialState);
-}
+// export function useProductReducer(initialState) {
+//   return useReducer(reducer, initialState);
+// }
+
+export default reducers;
