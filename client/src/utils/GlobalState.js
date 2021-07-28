@@ -1,3 +1,4 @@
+// don't think I need this anymore - initial state is in reducers, Prodiver instead of StoreProdiver being used
 import React, { createContext, useContext } from "react";
 import { useProductReducer } from './reducers'
 
