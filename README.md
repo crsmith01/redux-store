@@ -57,13 +57,13 @@ THEN I find that the app uses Redux instead of the Context API
 ```
 
 ## Mock-Up
-The following animations demonstrate the application's appearance and functionality:
+The following animations demonstrate the application's appearance and functionality.
 
-he following animation shows how a user can register using the Signup page and then navigate to the Products page:
+A user can register using the Signup page and then navigate to the Products page:
 
 ![A user registers on the Signup page and then navigates to the Products page, which displays images and descriptions of products.](./Assets/22-state-homework-demo-01.gif) 
 
-The following animation shows how the user can select a category, choose a product, view details about it on the product page, and add and remove it from their shopping cart:
+The user can select a category, choose a product, view details about it on the product page, and add and remove it from their shopping cart:
 
 ![The user selects a category, chooses a product, views details about it on the product page, and adds it to and removes it from their shopping cart.](./Assets/22-state-homework-demo-02.gif)
 
@@ -72,11 +72,9 @@ Finally, the user can check out by going to their shopping cart, as shown in the
 ![The user checks out by going to their shopping cart.](./Assets/22-state-homework-demo-03.gif)
 
 
-The following link leads to the GitHub repository for this app:
-[GitHub Link](https://github.com/crsmith01/redux-store)
+This [link](https://github.com/crsmith01/redux-store) leads to the GitHub repository for this application.
 
-The following link leads to the deployed application on Heroku:
-[GitHub Pages Link](__________________)
+This [link](__________________) leads to the deployed application on Heroku.
 
 
 
@@ -85,10 +83,10 @@ The following link leads to the deployed application on Heroku:
 
 2. Build an optimized application ```npm run build```.
 
-3. Start the application: ```npm run start```.
+3. Start the application: ```npm run develop```.
 
 ## Contact
-If you have any questions about the repo, contact me at [crsmith01](https://github.com/crsmith01).
+If you have any questions about the repo, contact me on GitHub at [crsmith01](https://github.com/crsmith01).
 
 
 ## License
