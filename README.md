@@ -17,20 +17,20 @@ My challenge this week was to refactor the e-commerce platform from an existing 
 
 ## Technologies Used
 
-1. React JS
-2. JavaScript
-3. Node.js
-4. Express.js
-5. HTML and CSS
-6. Compression
-7. IndexedDB
-8. Service worker
-9. Manifest
+1. React JS 
+2. Redux
+3. JavaScript
+4. Node.js
+5. Express.js
+6. HTML and CSS
+7. GraphQL
+9. Manifest.json
 10. MongoDB
 11. Mongoose
 12. Apollo Server
-13. Mutations
-14. Queries
+13. Queries and Mutations
+14. TypeDefs and Resolvers
+
 
 
 # User Story
@@ -59,20 +59,33 @@ THEN I find that the app uses Redux instead of the Context API
 ## Mock-Up
 The following animations demonstrate the application's appearance and functionality:
 
+he following animation shows how a user can register using the Signup page and then navigate to the Products page:
+
+![A user registers on the Signup page and then navigates to the Products page, which displays images and descriptions of products.](./Assets/22-state-homework-demo-01.gif) 
+
+The following animation shows how the user can select a category, choose a product, view details about it on the product page, and add and remove it from their shopping cart:
+
+![The user selects a category, chooses a product, views details about it on the product page, and adds it to and removes it from their shopping cart.](./Assets/22-state-homework-demo-02.gif)
+
+Finally, the user can check out by going to their shopping cart, as shown in the following animation:
+
+![The user checks out by going to their shopping cart.](./Assets/22-state-homework-demo-03.gif)
+
 
 The following link leads to the GitHub repository for this app:
 [GitHub Link](https://github.com/crsmith01/redux-store)
 
-The following link leads to the deployed application on GitHub Pages:
+The following link leads to the deployed application on Heroku:
 [GitHub Pages Link](__________________)
 
 
 
 ## Usage
-1. Install dependencies: ```npm install```
+1. Install dependencies: ```npm install``` (Ensure this also installs graphql. If it does not, run ```npm install graphql```), ```npm install react-redux``` and ```npm install @reduxjs/toolkit```.
 
-2. Start the server with ```npm start``` UPDATE THIS
-<!-- UPDATE UPDATE UPDATE -->
+2. Build an optimized application ```npm run build```.
+
+3. Start the application: ```npm run start```.
 
 ## Contact
 If you have any questions about the repo, contact me at [crsmith01](https://github.com/crsmith01).
