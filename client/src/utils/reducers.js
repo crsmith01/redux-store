@@ -29,8 +29,11 @@ export const reducer = (state, action) => {
   switch (action.type) {
     // Returns a copy of state with an update products array. We use the action.products property and spread it's contents into the new array.
     case UPDATE_PRODUCTS:
+      // return a new state object
       return {
+        // with all the existing state data (spread operator = like copy)
         ...state,
+        // that has a new array for the products field, with all the old products
         products: [...action.products],
       };
 
@@ -101,6 +104,7 @@ export const reducer = (state, action) => {
 
     // Return the state as is in the event that the `action.type` passed to our reducer was not accounted for by the developers.
     // This saves us from a crash.
+    // If this reducer doesn't recognize the action type, or doesn't care about this specific action, return the existing state unchanged.
     default:
       return state;
   }
