@@ -85,7 +85,7 @@ This application is deployed to Heroku. However, if you would like to run this a
 
 2. Seed the database: ```npm run seed```.
 
-3. Build an optimized application ```npm run build```.
+3. Create an optimized production build: ```npm run build```.
 
 4. Start the application: ```npm run develop```.
 
