@@ -79,11 +79,15 @@ This [link](__________________) leads to the deployed application on Heroku.
 
 
 ## Usage
+This application is deployed to Heroku. However, if you would like to run this application locally, run the following commands in the cloned repo:
+
 1. Install dependencies: ```npm install``` (Ensure this also installs graphql. If it does not, run ```npm install graphql```), ```npm install react-redux``` and ```npm install @reduxjs/toolkit```.
 
-2. Build an optimized application ```npm run build```.
+2. Seed the database: ```npm run seed```.
 
-3. Start the application: ```npm run develop```.
+3. Build an optimized application ```npm run build```.
+
+4. Start the application: ```npm run develop```.
 
 ## Contact
 If you have any questions about the repo, contact me on GitHub at [crsmith01](https://github.com/crsmith01).
