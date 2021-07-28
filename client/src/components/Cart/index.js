@@ -17,8 +17,14 @@ const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
   // const [state, dispatch] = useStoreContext();
+  // use React's hooks = give function components the ability to use local component state, execute side effects, and more. 
+  // useDispatch() hook returns a reference to the dispatch function from the Redux store. Can use it to dispatch actions as needed.
   const dispatch = useDispatch();
-  const state = useSelector();
+  // Allows you to extract data from the Redux store state, using a selector function.
+  // The selector will be called with the entire Redux store state as its only argument. 
+  // useSelector() will also subscribe to the Redux store, and run selector whenever an action is dispatched.
+  // takes in a function argument that returns the part of the state we want (here we are just returning the whole state)
+  const state = useSelector( state => state);
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
   useEffect(() => {
