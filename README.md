@@ -15,21 +15,23 @@ My challenge this week was to refactor the e-commerce platform from an existing 
 6. [Contact](#Contact)
 7. [License](#License)
 
+
 ## Technologies Used
 
 1. React JS 
 2. Redux
-3. JavaScript
-4. Node.js
-5. Express.js
-6. HTML and CSS
-7. GraphQL
-9. Manifest.json
-10. MongoDB
-11. Mongoose
-12. Apollo Server
-13. Queries and Mutations
-14. TypeDefs and Resolvers
+3. GraphQL
+4. JavaScript
+5. Node.js
+6. Express.js
+7. HTML and CSS
+8. Authentication (JWT)
+9. MongoDB and Mongoose ODM
+10. Apollo Server
+11. Queries and Mutations
+12. TypeDefs and Resolvers
+13. Manifest.json 
+14. Service worker (for offline functionality)
 
 
 

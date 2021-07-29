@@ -6,7 +6,7 @@ import { idbPromise } from '../../utils/helpers';
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 
-// import dispatch and selector from react-reduc
+// import dispatch and selector 
 import { useDispatch, useSelector } from 'react-redux';
 
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
@@ -23,7 +23,12 @@ const Cart = () => {
   // The selector will be called with the entire Redux store state as its only argument. 
   // useSelector() will also subscribe to the Redux store, and run selector whenever an action is dispatched.
   // takes in a function argument that returns the part of the state we want (here we are just returning the whole state)
-  const state = useSelector( state => state);
+  const state = useSelector(state => state);
+
+  // console.log(state);
+  console.log(state.cart);
+  // console.log(state.cart.length);
+
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
   useEffect(() => {
@@ -39,6 +44,7 @@ const Cart = () => {
       const cart = await idbPromise('cart', 'get');
       dispatch({ type: ADD_MULTIPLE_TO_CART, products: [...cart] });
     }
+
 
     if (!state.cart.length) {
       getCart();
