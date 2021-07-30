@@ -25,11 +25,7 @@ const Cart = () => {
   // takes in a function argument that returns the part of the state we want (here we are just returning the whole state)
   const state = useSelector(state => state);
 
-  // console.log(state);
-  // console.log(state.cart.length);
-
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
-  console.log('my cart', data);
 
   useEffect(() => {
     if (data) {
