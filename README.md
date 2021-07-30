@@ -76,7 +76,7 @@ Finally, the user can check out by going to their shopping cart, as shown in the
 
 This [link](https://github.com/crsmith01/redux-store) leads to the GitHub repository for this application.
 
-This [link](__________________) leads to the deployed application on Heroku.
+This [link](https://salty-refuge-35551.herokuapp.com/) leads to the deployed application on Heroku.
 
 
 
