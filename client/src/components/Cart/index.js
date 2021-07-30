@@ -26,10 +26,10 @@ const Cart = () => {
   const state = useSelector(state => state);
 
   // console.log(state);
-  console.log(state.cart);
   // console.log(state.cart.length);
 
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+  console.log('my cart', data);
 
   useEffect(() => {
     if (data) {

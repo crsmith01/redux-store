@@ -18,7 +18,7 @@ const initialState = {
   categories: [],
   // a string
   currentCategory: '',
-  cat: [],
+  cart: [],
   // setting cart as closed to start
   cartOpen: false
 }
