@@ -32,6 +32,7 @@ My challenge this week was to refactor the e-commerce platform from an existing 
 12. TypeDefs and Resolvers
 13. Manifest.json 
 14. Service worker (for offline functionality)
+15. Heroku (for deployment)
 
 
 
